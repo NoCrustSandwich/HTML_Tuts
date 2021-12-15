@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+
+
+    </head>
+
+
+    <body>
+
+        <hr>
+
+        <div id="demo2">
+            <p>Time on page loading:</p>
+            <p id="demo"></p>
+
+        </div>
+        
+
+        <hr>
+
+        <script>
+
+
+            document.getElementById("demo").innerHTML = Date()
+
+
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+        <p>Time When Button clicked</p>
+        <p id="demo1"></p>
+        <button onclick="document.getElementById('demo1').innerHTML = Date()">Click for time update</button>
+        
+        <hr>
+
+        <button onclick="document.getElementById('demo2').style.backgroundColor = 'blue'; document.getElementById('demo2').style.color = 'white';">Change background to blue</button>
+        <button onclick="document.getElementById('demo2').style.backgroundColor = 'white'; document.getElementById('demo2').style.color = 'black';">Change background to white</button>
+
+        <hr>
+
+        
+        <image id="demo3" ></image>
+
+
+        <script>
+
+
+            document.getElementById("demo3").src = "Images/Bookworm.png"
+            document.getElementById('demo3').width = 1000; 
+            document.getElementById('demo3').height = 500;
+
+
+        </script>
+
+        <br>
+
+        <button onclick="document.getElementById('demo3').src = 'Images/Bookworm.png'; document.getElementById('demo3').width = 1000; document.getElementById('demo3').height = 500;">Change pic to Bookworm</button>
+        <button onclick="document.getElementById('demo3').src = 'Images/Toga.jpg'; document.getElementById('demo3').width = 500; document.getElementById('demo3').height = 500;">Change pic to Toga</button>
+
+        <hr>
+
+
+    </body>
+
+
+</html>
