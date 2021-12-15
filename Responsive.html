@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale='1.0'">
+
+
+        <style>
+
+            .LeftMenu{
+
+                float: left;
+                width: 20%;
+
+            }
+
+            .CenterMenu{
+
+                float: left;
+                width: 60%;
+                text-align: center;
+
+            }
+
+            .RightMenu{
+
+                float: left;
+                width: 20%;
+
+            }
+
+            @media screen and (max-width: 800px){
+
+                .LeftMenu, .CenterMenu, .RightMenu {
+
+                    width: 100%;
+                    text-align: left;
+
+                }
+                
+            }
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <hr>
+
+        <img src="Images/Toga.jpg" style="max-width: 100%; height: auto;">
+
+        <hr>
+
+
+        <picture>
+
+            <source srcset="Images/Toga.jpg" media="(max-width: 800px)">
+            <source srcset="Images/715.jpg" media="(max-width: 1000px)">
+            <source srcset="Images/Bookworm.png">
+
+            <img src="Images/Toga.jpg" alt="Toga">
+
+
+
+        </picture>
+
+        <hr>
+
+
+        <h1 style="font-size: 10vw;">Header 1</h1>
+
+        <hr>
+
+        <p class="LeftMenu" style="background-color: aqua;">Stuff 1</p>
+
+        <p class="CenterMenu" style="background-color: gold;">Stuff 3</p>
+
+        <p class="RightMenu" style="background-color: rebeccapurple;">Stuff 2</p>
+
+        
+
+    </body>
+
+
+
+</html>
