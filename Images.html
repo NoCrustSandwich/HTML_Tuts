@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <body>
+
+            <!--Image imbedding-->
+            <img src="Images/715.jpg" alt="God natsuki meme" style="height: 200;width: 250;">
+
+        <hr>
+
+            <!--Twitch link with image-->
+            <a href="https://www.twitch.tv/"><img src="/Images/715.jpg" alt="TwitchTV" style="height: 200;width: 250;"></a>
+
+        <hr>
+
+            <!--Image floats by the right of the text-->
+            <p><img src="/Images/715.jpg" alt="natsuki meme" style="float:right;width:100px;height:100px;">Paragrapgh 1</p>
+
+            <!--Image floats by the left of the text-->
+            <p><img src="/Images/715.jpg" alt="natsuki meme" style="float:left;width:100px;height:100px;">Paragrapgh 2</p>
+
+        <hr>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!--Image maps-->
+        <img src="/Images/715.jpg" alt="natsuki meme" usemap="#workmap" >
+
+        <map name ="workmap">
+
+            <area shape="rect" coords="440, 530, 30, 250" alt="smol natsuki" href="https://www.twitch.tv/">
+
+            <area shape="rect" coords="300, 560, 470, 680" alt="God arrived" href="https://www.bitch.com/" onclick="myFunction()">
+
+        </map>
+
+
+        <!--Adds scripts functions to clickable image map-->
+        <script>
+            function myFunction(){
+
+                alert("You clicked the coffee cup!");
+
+
+            }
+
+
+        </script>
+
+
+
+        <hr>
+
+
+        <!--Backdround image for the words-->
+        <div style="background-image: url('/Images/715.jpg'); background-repeat: no-repeat; 
+                    background-attachment: fixed; background-size: 100% 100%;">
+
+
+            You can specify background images<br>
+            for any visible HTML element.<br>
+            In this example, the background image<br>
+            is specified for a div element.<br>
+            By default, the background-image<br>
+            will repeat itself in the direction(s)<br>
+            where it is smaller than the element<br>
+            where it is specified. (Try resizing the<br>
+            browser window to see how the<br>
+            background image behaves.
+
+
+        </div>
+
+
+        <hr>
+
+        <!--Picture tag that affects pictures based on browser resolution-->
+        <picture>
+
+            <source media="(min-width: 650px)" srcset="/Images/Toga.jpg">
+            <source media="(min-width: 600px)" srcset="/Images/Bookworm.png">
+            <!--Last resort if all else doesnt check right or browser that arent compatible to use the picture tag-->
+            <img src="/Images/715.jpg">
+
+        </picture>
+
+        <hr>
+
+
+
+
+
+
+    </body>
+
+
+
+
+</html>

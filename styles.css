@@ -1,0 +1,73 @@
+
+body{background-color: gold;}
+
+p{border: 2px solid green;}
+
+h2{color: aquamarine;}
+
+
+h3{
+
+    font-size: 300%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+
+    border: 2px solid red;
+    padding: 50px;
+    margin: 50px;
+
+
+}
+
+
+button{
+
+    margin: 20px;
+
+
+}
+
+
+
+a:link{
+
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+a:visited{
+
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+
+
+}
+
+
+
+a:hover{
+
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+
+}
+
+
+
+a:active{
+
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+
+
+
+}
