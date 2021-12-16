@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<title>Input Attributes</title>
+
+	</head>
+
+	<body>
+
+
+		<hr>
+
+
+		<form>
+			<label for="fname">First Name:</label>
+			<br>
+			<input type="text" name="fname" id="fname" value="John">
+		</form>
+
+
+
+
+		<hr>
+
+
+
+
+
+		<form>
+
+			<label for="lname" >Last Name:</label>
+			<br>
+			<input type="text" value="Deere" id="lname" name="lname" readonly>
+
+		</form>
+
+
+
+
+		<hr>
+
+
+
+
+
+		<form>
+
+			<label for="mname">Middle Name:</label>
+			<br>
+			<input type="text" value="Scott" name="mname" id="mname" disabled>
+
+		</form>
+
+
+
+		<hr>
+
+
+
+
+			<form>
+
+				<label for="stuffin">Cool Stuff please:</label>
+				<br>
+				<input type="text" name="stuffin" id="stuffin" value="GOAT" size="40" required>
+
+			</form>
+
+
+
+
+		<hr>
+
+
+
+
+		<form>
+
+			<label for="stuffinnstuff">Animal please:</label>
+			<br>
+			<input type="text" name="stuffinnstuff" id="stuffinnstuff" value="Cat" maxlength="4">
+
+		</form>
+
+
+
+		<hr>
+
+
+
+		<form>
+
+			<label for="numin">Even Number between 2 and 8 please:</label>
+			<br>
+			<input type="number" name="numin" id="numin" max="8" min="2" step="2">
+
+		</form>
+
+
+
+		<hr>
+
+
+
+		<form>
+
+			<label for="email">Enter the 2 emails in please:</label>
+			<br>
+			<input type="email" name="email" id="email" multiple autocomplete="off">
+
+		</form>
+
+
+
+
+		<hr>
+
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<form>
+
+			<label for="countrycode">Enter the Country code please:</label>
+			<br>
+			<input type="text" name="countrycode" id="countrycode" pattern="[A-Za-z]{3}" placeholder="ie. RSA" autofocus>
+
+		</form>
+
+		<hr>
+		
+
+		<form>
+
+			<label for="imagein">Input an image please:</label>
+			<br>
+			<input src="/Images/Bookworm.png" type="image" name="imagein" id="imagein" alt="Submit something please" width="300" height="300" >
+
+		</form>
+
+		<hr>
+
+
+		<form>
+
+			<label for="megalist">This here is a list:</label>
+			<br>
+			<input list="megalist">
+			<datalist id="megalist">
+
+				<option value="Gamer">
+				<option value="Town">
+				<option value="Cool">
+				<option value="Seagull">
+
+			</datalist>
+
+		</form>
+
+		<hr>
+
+	</body>
+
+
+
+
+</html>
