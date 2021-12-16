@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+
+	<head>
+
+		<title>Graphical Canvas</title>
+
+	</head>
+
+	<body>
+
+		<hr>
+
+		<img src="/Images/715.jpg" id="Natsuki" name="Natsuki" width="300" height="300"></img>
+
+		<hr>
+
+		<canvas id="EmptyGraph" width="300" height="300" style="border: 2px solid black;"></canvas>
+
+		<script>
+
+			var c = document.getElementById("EmptyGraph");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(0, 0);
+			ctx.lineTo(300, 300);
+			ctx.stroke();
+
+		</script>
+
+
+		<hr>
+
+		<canvas id="CircleGraph" width="300" height="300" style="border: 2px solid black;"></canvas>
+
+		<script>
+
+			var c = document.getElementById("CircleGraph");
+			var ctx = c.getContext("2d");
+			ctx.beginPath();
+			ctx.arc(150, 150, 100, 0, 2 * Math.PI);
+			ctx.stroke();
+
+		</script>
+
+
+		<hr>
+		
+
+		<canvas id="TextGraph" width="300" height="300" style="border: 2px solid black;"></canvas>
+
+		<script>
+
+			var c = document.getElementById("TextGraph");
+			var ctx = c.getContext("2d");
+			ctx.beginPath();
+			ctx.font = "30px Arial";
+			ctx.fillText("Hello World!", 70, 150);
+
+		</script>
+
+
+		<hr>
+
+		<canvas id="StrokeGraph" width="300" height="300" style="border: 2px solid black;"></canvas>
+
+		<script>
+			var c = document.getElementById("StrokeGraph");
+			var ctx = c.getContext("2d");
+			ctx.font = "30px Arial";
+			ctx.strokeText("Hello World!", 70, 150);
+		</script>
+
+		<hr>
+
+		<canvas id="linearGrad" width="300" height="300" style="border: 2px solid black;"></canvas>
+
+		<script>
+
+			var c = document.getElementById("linearGrad");
+			var ctx = c.getContext("2d");
+
+			// Create gradient
+			var grd = ctx.createLinearGradient(0, 0, 200, 0);
+			grd.addColorStop(0, "blue");
+			grd.addColorStop(1, "green");
+
+			// Fill with gradient
+			ctx.fillStyle = grd;
+			ctx.fillRect(0, 0, 300, 300);
+
+		</script>
+
+		<hr>
+
+		<canvas id="CircleGrad" width="300" height="300" style="border: 2px solid black;"></canvas>
+
+		<script>
+
+			var c = document.getElementById("CircleGrad");
+			var ctx = c.getContext("2d");
+
+			// Create gradient
+			var grd = ctx.createRadialGradient(150, 150, 10, 150, 150, 200);
+			grd.addColorStop(0, "Red");
+			grd.addColorStop(1, "orange");
+
+			// Fill with gradient
+			ctx.fillStyle = grd;
+			ctx.fillRect(0, 0, 300, 300);
+
+		</script>
+
+		<hr>
+
+		<canvas id="myCanvas" width="300" height="300" style="border: 2px solid black;"></canvas>
+
+
+		<p><button onclick="myCanvas()">Try it</button></p>
+
+		<script>
+			function myCanvas() {
+
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			var img = document.getElementById("Natsuki");
+			ctx.drawImage(img, 0, 0);
+
+			}
+		</script>
+
+		<hr>
+
+
+
+		
+
+	</body>
+
+
+
+</html>
