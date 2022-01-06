@@ -1,0 +1,10 @@
+p {
+  border: 20px solid tomato;
+  background-color: #ff6347;
+}
+
+h1 {
+  background-color: rgb(30, 100, 2);
+
+  color: hsl(20, 3%, 84%);
+}

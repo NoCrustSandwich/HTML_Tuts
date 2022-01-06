@@ -1,0 +1,33 @@
+body {
+  background-color: indigo;
+
+  opacity: 0.8;
+}
+
+.ClassCool {
+  background-image: url(Images/Toga.jpg);
+
+  background-repeat: repeat-x;
+
+  background-repeat: repeat-y;
+}
+
+h1 {
+  background-image: url(Images/Bookworm.png);
+
+  background-repeat: no-repeat;
+
+  background-position: right top;
+
+  background-attachment: fixed;
+}
+
+h2 {
+  background-image: url("Images/715.jpg");
+
+  background-attachment: scroll;
+}
+
+h3 {
+  background: red url("Images/Toga.jpg") no-repeat scroll right top;
+}
