@@ -1,0 +1,19 @@
+h1 {
+  position: static;
+}
+
+h2 {
+  position: absolute;
+}
+
+h3 {
+  position: sticky;
+}
+
+h4 {
+  position: relative;
+}
+
+p {
+  position: fixed;
+}
