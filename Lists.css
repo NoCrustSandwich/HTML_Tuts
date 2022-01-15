@@ -1,0 +1,27 @@
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: square;
+}
+
+ul.coolpic {
+  list-style-image: url("Images/favicon.ico");
+  list-style-position: inside;
+}
+
+ol.nothing {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.short {
+  list-style: square inside url("Images/anime-anime-girl.mp4");
+}
+
+ol.colors {
+  background-color: indigo;
+  padding: 20px;
+}
